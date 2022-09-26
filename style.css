@@ -1,0 +1,43 @@
+.container1{background-color: aquamarine;}
+.container2{background-color: blueviolet;}
+.header{background-color: blue;}
+.item1{background-color: darkgoldenrod;}
+.item2{background-color: brown;}
+.item3{background-color: darkred;}
+.footer{background-color: dodgerblue;}
+
+
+.main{
+  display: grid;
+  grid-template-areas: 
+    "container1 container2";
+  grid-template-rows: 100vh auto auto;
+}
+
+.container1{
+  display: grid;
+  
+  grid-template-areas: 
+    "header"
+    "item1"
+    "item2"
+    "item3"
+    "footer" ;
+}
+.container2{
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "info"
+    "footer"
+}
+
+.container1{grid-area: container1;}
+.header{grid-area: header;}
+.item1{grid-area: item1;}
+.item2{grid-area: item2;}
+.item3{grid-area: item3;}
+.footer{grid-area: footer;}
+
+.container2{grid-area: container2;}
+.info{grid-area: info;}
